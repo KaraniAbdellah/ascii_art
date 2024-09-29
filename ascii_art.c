@@ -2,7 +2,7 @@
 #include "ascii_art.h"
 #include <stdlib.h>
 #include <string.h>
-
+#include <unistd.h>
 
 
 
@@ -17,16 +17,21 @@ void display_ascii_art(char *file) {
 	FILE *p_file = fopen(file, "r");
 	if (p_file == NULL) print_error();
 	else {
-		// read file using 
+		// read file using fgect() function
 		char c;
 		while ((c = fgetc(p_file)) && c != EOF) {
-			printf("%c", c);
-			if (c == 'e') { // [1] & [2]
-				// move cursor to top 
+			
+			if (c == STOP) { // [1] & [2]
+				// move cursor to top
 				printf(TOP);
 				// remove all terminal down content
-				printf("\033[J");
-			}
+				printf(CLEAR);
+				usleep(170000);
+			} else printf("%c", c);
+			
+		}
+		if (c == EOF) {
+			printf(CLEAR); display_ascii_art(file);
 		}
 	}
 	fclose(p_file);
