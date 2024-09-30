@@ -16,7 +16,7 @@ void display_ascii_art(char *file) {
 }
 
 
-
+// search for ansii code and see video
 
 
 
