@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
 
 	if (argc < 2) {
-		print_error();
+		print_error("Inavlid arguments number");
 	} else {
 		display_ascii_art(argv[1]);
 	}
