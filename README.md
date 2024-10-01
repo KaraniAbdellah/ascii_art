@@ -17,6 +17,7 @@ This project creates an ASCII art animation using frames that are stored in file
 
 Welcome to all contributors!
 
+============================================
 
 made with love by Abdellah Karani
 
