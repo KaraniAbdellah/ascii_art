@@ -1,4 +1,4 @@
-/* mmset function */
+/* memset function */
 
 	In general, memset is a C library function used to fill a block of memory 
 	with a specific value. Here’s a quick overview:
@@ -8,4 +8,15 @@
 	s: Pointer to the block of memory to fill.
 	c: Value to set (usually a byte). [0 in ascii code] e.g: (48 --> '0')
 	n: Number of bytes to fill.
+
+
+
+/* Escape Sequence */
+
+	An escape sequence in C is a special combination of characters 
+	that represent a specific action
+
+
+
+
 
