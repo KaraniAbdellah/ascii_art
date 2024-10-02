@@ -13,6 +13,16 @@ This project creates an ASCII art animation using frames that are stored in file
 | `display_ascii_art`  | Displays ASCII art from a file, looping through frames. |
 
 
+## Screenshots
+![donut](images/donut.png)
+
+![rick](images/rick.png)
+
+![man](images/man.png)
+
+
+
+
 ## Contributors
 
 Welcome to all contributors!
